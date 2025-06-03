@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+🛒 React Cart App with Theme Toggle
+A mini e-commerce frontend application built with React. It features:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🛍️ Product listing
 
-## Available Scripts
+🛒 Cart management using Context API
 
-In the project directory, you can run:
+🌗 Light/Dark theme toggle using ThemeContext
 
-### `npm start`
+⚡ Performance optimized using React.memo, useCallback, and useMemo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🎨 Styled with Tailwind CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🔧 Features
+Add/remove products to/from cart
 
-### `npm test`
+View cart items and total price
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Toggle between light and dark themes
 
-### `npm run build`
+Responsive design
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Persistent theme using localStorage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+📁 Folder Structure
+pgsql
+Copy
+Edit
+src/
+├── components/
+│   ├── ProductCard.jsx
+│   ├── CartItem.jsx
+│   ├── CartSummary.jsx
+│   ├── ThemeToggle.jsx
+│   └── Navbar.jsx
+├── context/
+│   ├── CartContext.js
+│   └── ThemeContext.js
+├── pages/
+│   ├── Home.jsx
+│   └── CartPage.jsx
+├── constants/
+│   └── constant.js
+├── App.js
+└── index.js
+🧩 Tech Stack
+React (with functional components and hooks)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+React Router DOM for routing
 
-### `npm run eject`
+Context API for global state management
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Tailwind CSS for styling
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+LocalStorage for theme persistence
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🚀 Getting Started
+1. Clone the repo
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/react-cart-app.git
+cd react-cart-app
+2. Install dependencies
+bash
+Copy
+Edit
+npm install
+3. Start the development server
+bash
+Copy
+Edit
+npm run dev
+# or
+npm start
+🌙 Theme Toggle
+Uses ThemeContext with useContext and useEffect
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Saves theme in localStorage
 
-## Learn More
+Dynamically applies light/dark classes to <html>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🧠 State Management
+CartContext: Manages cart items, add/remove, clear
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ThemeContext: Toggles between light and dark themes
 
-### Code Splitting
+Custom useCart() and useTheme() hooks for clean consumption
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📦 Constants
+All text, labels, and constants are stored in constants/constant.js for reusability and consistency.
